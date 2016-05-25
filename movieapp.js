@@ -84,7 +84,7 @@ $(function() {
           a.append(img);
           $('#results').append(a);
         }
-        if (data.totalResults > data.Search.length) {
+        if (Number(data.totalResults) > arrayOfResults.length) {
           $('#more-button').show();
         }
         console.log('Got the data: ', data);

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="movieapp.css" media="screen" title="no title" charset="utf-8">
+    </script>
+  </head>
+  <body>
+    <div class="container" id="search-page">
+      <form class="searchform">
+        <input type="text" class="searchbox" placeholder="Search for a movie...">
+        <button type="submit" name="button" class="searchbutton">Search Movies</button>
+      </form>
+      <div id="results"></div>
+      <button type="button" name="button" id="more-button">More...</button>
+    </div>
+    <div id="details-page">
+      <p><label>Actors: </label><span class="actors"></span></p>
+      <p><label>Title: </label><span class="title"></span></p>
+      <p><label>Year: </label><span class="year"></span></p>
+      <p><label>Rated: </label><span class="rated"></span></p>
+      <img src="" alt="" class="poster"/>
+      <a href="#" id="back">Back to Results</a>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="movieapp.js"></script>
+  </body>
+</html>

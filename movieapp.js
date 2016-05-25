@@ -39,7 +39,9 @@ $(function() {
         $('.metascore').text(data.Metascore);
         $('.tomatoconsensus').text(data.tomatoConsensus);
         $('.tomatometer').text(data.tomatoMeter);
-
+        $('.imdbrating').text(data.imdbRating);
+        $('.imdblink').attr('href', 'http://imdb.com/title/' + data.imdbID);
+        $('.rt').attr('href', data.tomatoURL);
         $('.poster').attr('src', data.Poster)
         .attr('alt', data.Title);
         console.log('details ajax call: ', data);

@@ -65,3 +65,6 @@ h1, h2, h3 {
 #search-page img:hover {
   opacity: 1;
 }
+.logo {
+  width: 100px;
+}

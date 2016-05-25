@@ -47,3 +47,12 @@ a.result {
 .searchform {
   margin-bottom: 5px;
 }
+h3 {
+  text-align: left;
+}
+#search-page img {
+  opacity: .7;
+}
+#search-page img:hover {
+  opacity: 1;
+}

@@ -23,7 +23,8 @@ $(function() {
       url: 'http://omdbapi.com/',
       method: 'GET',
       data: {
-        i: imdbID
+        i: imdbID,
+        tomatoes: true
       },
       success: function(data) {
         $('.actors').text(data.Actors);
@@ -36,6 +37,9 @@ $(function() {
         $('.language').text(data.Language);
         $('.plot').text(data.Plot);
         $('.metascore').text(data.Metascore);
+        $('.tomatoconsensus').text(data.tomatoConsensus);
+        $('.tomatometer').text(data.tomatoMeter);
+
         $('.poster').attr('src', data.Poster)
         .attr('alt', data.Title);
         console.log('details ajax call: ', data);

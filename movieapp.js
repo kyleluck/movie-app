@@ -14,7 +14,7 @@ $(function() {
     callForResultsPage();
   });
 
-  $('body').on('click', 'a', function (event){
+  $('#search-page').on('click', 'a', function (event){
     event.preventDefault();
     $('#search-page').hide();
     var imdbID = $(this).data('imdbID');
@@ -30,6 +30,12 @@ $(function() {
         $('.title').text(data.Title);
         $('.rated').text(data.Rated);
         $('.year').text(data.Year);
+        $('.runtime').text(data.Runtime);
+        $('.released').text(data.Released);
+        $('.awards').text(data.Awards);
+        $('.language').text(data.Language);
+        $('.plot').text(data.Plot);
+        $('.metascore').text(data.Metascore);
         $('.poster').attr('src', data.Poster)
         .attr('alt', data.Title);
         console.log('details ajax call: ', data);
@@ -37,7 +43,7 @@ $(function() {
     });
     $('#details-page').show();
   });
-  $('body').on('click', '#back', function(event){
+  $('#details-page').on('click', '#back', function(event){
     event.preventDefault();
     $('#search-page').show();
     $('#details-page').hide();
@@ -59,6 +65,7 @@ $(function() {
           var arrayElement = arrayOfResults[i];
           var a = $('<a>');
           a.data('imdbID', arrayElement.imdbID);
+          a.addClass('result');
           var img = $('<img>').attr('alt', arrayElement.Title);
 
           if (arrayElement.Poster === 'N/A') {

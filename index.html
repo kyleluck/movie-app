@@ -3,25 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Movie App</title>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="movieapp.css" media="screen" title="no title" charset="utf-8">
     </script>
   </head>
   <body>
-    <div class="container" id="search-page">
+    <div id="search-page" class="container">
       <form class="searchform">
         <input type="text" class="searchbox" placeholder="Search for a movie...">
         <button type="submit" name="button" class="searchbutton">Search Movies</button>
       </form>
       <div id="results"></div>
-      <button type="button" name="button" id="more-button">More...</button>
+      <button type="button" name="button" id="more-button" class="clear">More...</button>
     </div>
-    <div id="details-page">
+    <div id="details-page" class="container">
+      <button type="button" name="backbutton" class="backbutton" id="back">Back to Results</button>
       <p><label>Actors: </label><span class="actors"></span></p>
       <p><label>Title: </label><span class="title"></span></p>
       <p><label>Year: </label><span class="year"></span></p>
       <p><label>Rated: </label><span class="rated"></span></p>
+      <p><label>Runtime: </label><span class="runtime"></span></p>
+      <p><label>Released: </label><span class="released"></span></p>
+      <p><label>Awards: </label><span class="awards"></span></p>
+      <p><label>Language: </label><span class="language"></span></p>
+      <p><label>Plot: </label><span class="plot"></span></p>
+      <p><label>Metascore: </label><span class="metascore"></span></p>
       <img src="" alt="" class="poster"/>
-      <a href="#" id="back">Back to Results</a>
     </div>
     <script src="jquery.js"></script>
     <script src="movieapp.js"></script>

@@ -59,16 +59,22 @@ $(function() {
           var arrayElement = arrayOfResults[i];
           var a = $('<a>');
           a.data('imdbID', arrayElement.imdbID);
-          var img = $('<img>')
-            .attr('src', arrayElement.Poster)
-            .attr('alt', arrayElement.Title);
+          var img = $('<img>').attr('alt', arrayElement.Title);
+
+          if (arrayElement.Poster === 'N/A') {
+            //show image not available image
+            img.attr('src', 'img-na.png');
+          } else {
+            img.attr('src', arrayElement.Poster);
+          }
+
           a.append(img);
           $('#results').append(a);
         }
         if (data.totalResults > data.Search.length) {
           $('#more-button').show();
         }
-        //console.log('Got the data: ', data);
+        console.log('Got the data: ', data);
       }
     });
   }

@@ -3,7 +3,8 @@
   font-family: 'Arimo', sans-serif;
 }
 body{
-  background-color: grey;
+  background-color: #141414;
+  color: #999999;
 }
 .container {
   margin: auto;
@@ -34,6 +35,11 @@ a.result {
   width: 50%;
   clear: left;
 }
+.title {
+ float: left;
+ text-align: left;
+ clear: left;
+}
 .poster {
   position: absolute;
   right: 10px;
@@ -49,6 +55,9 @@ a.result {
 }
 h3 {
   text-align: left;
+}
+h1, h2, h3 {
+  color: white;
 }
 #search-page img {
   opacity: .7;

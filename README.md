@@ -5,6 +5,3 @@ An app that allows searching of movies and displays relevant details. Built with
 # Screenshot
 ![screenshot1](screenshot1.png)
 ![screenshot2](screenshot2.png)
-
-# View
-Check it out [here](http://kyleluck.github.io/movie-app/)
